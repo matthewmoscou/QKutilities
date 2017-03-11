@@ -94,6 +94,7 @@ fasta_out.close()
 # simple way, export everything within the interval
 # complicated way, evaluate each gene model and comment if truncated within a region
 #    perform analysis line by line, but only export a full gene model once it is complete
+# current implementation, simple way
 
 gff_file = open(options.gff, 'r')
 gff_out = open(options.prefix + '.gff3', 'w')
@@ -113,10 +114,6 @@ while line:
 					if int(sline[4]) <= options.end:
 						gff_out.write(sline[0] + '\t' + sline[1] + '\t' + sline[2] + '\t' + str(int(sline[3]) - options.start) + '\t' + str(int(sline[4]) - options.start) + '\t' + sline[5] + '\t' + sline[6] + '\t' + sline[7] + '\t' + sline[8] + '\n')
 
-#				else:
-#					print 'truncated gene model - start - ', sline[0], sline[3], sline[4], sline[8]
-#			elif int(sline[4]) > options.end:
-#				print 'truncated gene model - end - ', sline[0], sline[3], sline[4], sline[8]
 
 	
 	line = gff_file.readline()
