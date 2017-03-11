@@ -6,5 +6,7 @@ A set of scripts for parsing bioinformatic data.
 
 <i>QKutilities_FASTA_length.py</i> reads a FASTA file and reports the lengths of all sequences.
 
+<i>QKutilities_genome_coverage.py</i> reads a genome coverage output from bedtools and performs a window-based analysis of coverage.
+
 ## Examples
 To be added soon. 8 March 2017
