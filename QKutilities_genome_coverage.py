@@ -59,7 +59,7 @@ if len(options.fasta) > 0:
 	
 		line = fasta_file.readline()
 	
-	output.write('contig' + '\t' + 'window' + '\t' + 'masking' + '\n')
+	output_file.write('contig' + '\t' + 'window' + '\t' + 'masking' + '\n')
 
 	for ID in masked.keys():
 		for position in range(len(masked[ID])):
