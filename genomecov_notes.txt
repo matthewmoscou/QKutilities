@@ -1,0 +1,28 @@
+Analyzing genome coverage files
+
+
+Window-based analysis
+
+How to deal with masking?
+
+Plot masking across a sequence? How to deal with this? Window based analysis?
+
+638641459 positions in chromosome 7D
+
+Read original FASTA file to identify if there is an N at the given position?
+Only evaluate regions with non repetitive sequence?
+
+
+for position in fasta file
+read a line from genome cov file
+based on index of the position
+efficient use of memory...
+
+make an initial evaluation of sequence length?
+
+
+---- 10 March 2017
+Need to identify the rate of masking
+Similar script for FASTA
+
+Need to expand the script to handle coverage for multiple contigs (easy addition)
